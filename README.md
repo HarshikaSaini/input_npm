@@ -182,5 +182,4 @@ const App = () =>
     </>
   );
 };
-
-
+We only need to pass the array of different types of input fields  that we want rather than creating seprately !!

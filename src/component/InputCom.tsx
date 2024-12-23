@@ -1,4 +1,4 @@
-import React, { useState, useEffect,useRef } from "react";
+import React, { useState, useEffect } from "react";
 import {ReusableFormComponentProps } from "./Interface"
 
 
@@ -13,7 +13,7 @@ const ReusableFormComponent: React.FC<ReusableFormComponentProps> = ({
 
   useEffect(() => {
     // Initialize form values from parent (if they exist)
-    const initialValues: Record<string, string> = fields.reduce((acc, field) => {
+    const initialValues: Record<string, string | string[] | File | null> = fields.reduce((acc: Record<string, string | string[] | File | null>, field) => {
       acc[field.id] = field.value || ''; // Use value passed in `fields`, or default to empty string
       return acc;
     }, {});

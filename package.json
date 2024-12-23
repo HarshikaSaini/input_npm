@@ -1,42 +1,45 @@
 {
-    "name": "my-input-library",
-    "version": "1.0.6",
-    "private": false,
-    "main": "dist/index.js",
-    "module": "dist/index.esm.js",
-    "types": "dist/index.d.ts",
-    "type": "module",
-    "exports": {
+  "name": "my-input-library",
+  "version": "1.0.8",
+  "private": false,
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "exports": {
     ".": {
       "import": "./dist/index.esm.js",
       "require": "./dist/index.js",
-      "types" : "./dist/index.d.ts"
+      "types": "./dist/index.d.ts"
     }
   },
-    "scripts": {
-        "build": "rollup -c",
-        "start": "tsc --watch"
-    },
-    "dependencies": {
-        "react": "^18.2.0",
-        "tslib": "^2.8.1"
-    },
-    "devDependencies": {
-        "@rollup/plugin-commonjs": "^28.0.2",
-        "@rollup/plugin-node-resolve": "^16.0.0",
-        "@rollup/plugin-typescript": "^12.1.2",
-        "rollup": "^4.29.1",
-        "typescript": "^5.6.2"
-    },
-    "files": [
-        "dist",
-        "README.md"
-    ],
-    "keywords": [
-        "react",
-        "input",
-        "library"
-    ],
-    "author": "Harshika Saini",
-    "license": "MIT"
+  "scripts": {
+    "build": "rollup -c",
+    "start": "tsc --watch"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0 <20.0.0",
+    "react-dom": ">=18.0.0 <20.0.0"
+  },
+  "devDependencies": {
+    "react": "^18.3.1 || ^19.0.0",
+    "react-dom": "^18.3.1 || ^19.0.0",
+    "tslib": "^2.8.1",
+    "@rollup/plugin-commonjs": "^28.0.2",
+    "@rollup/plugin-node-resolve": "^16.0.0",
+    "@rollup/plugin-typescript": "^12.1.2",
+    "rollup": "^4.29.1",
+    "typescript": "^5.6.2"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "keywords": [
+    "react",
+    "input",
+    "library"
+  ],
+  "author": "Harshika Saini",
+  "license": "MIT"
 }
