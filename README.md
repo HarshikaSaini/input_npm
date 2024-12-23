@@ -1,6 +1,4 @@
 
-# input_npm
-
 #React + Typescript
 
 #My Input Library
